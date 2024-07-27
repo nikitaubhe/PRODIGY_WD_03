@@ -1,0 +1,137 @@
+*{
+    font-family: "Playwrite AU SA", cursive;
+}
+.container{
+    border: 4mm ridge #553939;
+}
+#logo{
+    width: 40px;
+    height: 40px;
+    margin-bottom: -0.4rem;
+}
+h1{
+    text-align-last: center;
+}
+h3,span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: larger;
+}
+span,h3{
+    font-weight: 600;
+    font-size: larger;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #A87C7C;
+    
+}
+#mode_selection{
+    margin: 2rem;
+    margin-top: 0.5px;
+    gap: 1rem;
+}
+
+#symbol_selection {
+    margin-bottom: 20px;
+}
+
+
+#game_board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 8px;
+    margin: 2rem;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    border: 2px solid #333;
+    cursor:pointer;
+    background-color: #503C3C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+#reset_button {
+    margin: 1rem 6.6rem;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    background-color: red;
+  
+}
+#reset_button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+}
+.symbol_button {
+    margin: 1rem -7rem 0 8rem;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    justify-content: center;
+   
+}
+.symbol_button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.hidden {
+    display: none;
+}
+
+.mode_selection_button{
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 10px;
+  padding: 0 10px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0.25rem;
+}
+
+.mode_selection_button:hover {
+  background-color: #fff;
+}
+
+.mode_selection_button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+.mode_selection_button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+

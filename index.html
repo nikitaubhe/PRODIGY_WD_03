@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+</head>
+<body>
+<div class="container">
+    
+    <h1>
+        <img src="./assets/logo.png" alt="logo" id="logo">Tic-Tac-Toe
+    </h1>
+      
+    <!-- Mode Selection -->
+    <div id="mode_selection">
+        <h3>Select game mode </h3>
+        <button id="player_vs_player" class="mode_selection_button">Player vs Player</button>
+        <button id="player_vs_ai" class="mode_selection_button">Player vs AI</button>
+    </div>
+
+      <!---Symbol Selection--->
+    <div id="symbol_selection" class="hidden">
+        <span>Select your symbol: </span>
+        <button class="symbol_button" data-symbol="X"><img src="./assets/cross.png" alt="cross" id="symbol"></button>
+        <button class="symbol_button" data-symbol="O"><img src="./assets/letter-o.png" alt="O" id="symbol"></button>
+    </div>
+
+       <!---Board of game--->
+    <div id="game_board">
+        <div class="cell" data-index = "0"></div>
+        <div class="cell" data-index = "1"></div>
+        <div class="cell" data-index = "2"></div>
+        <div class="cell" data-index = "3"></div>
+        <div class="cell" data-index = "4"></div>
+        <div class="cell" data-index = "5"></div>
+        <div class="cell" data-index = "6"></div>
+        <div class="cell" data-index = "7"></div>
+        <div class="cell" data-index = "8"></div>
+    </div>
+
+       <!---Reset Button--->
+    <button id="reset_button" class="hidden">Reset Game</button>
+
+</div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
